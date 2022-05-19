@@ -1,0 +1,9 @@
+.min {
+    min-height: 100vh;
+}
+.center {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+  }
