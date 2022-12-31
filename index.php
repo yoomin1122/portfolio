@@ -1,14 +1,3 @@
-<?php
-$conn = mysqli_connect(
-  'localhost:3306',
-  'root',
-  'yoominserver1122',
-  'web'); 
-echo '<script>';
-if($conn->connect_error) echo 'console.log ("DB에 접속할수 없습니다.");';
-else echo 'console.log ("DB에 접속하였습니다.");';
-echo '</script>';
-?>
 <!doctype html>
 <html lang="en">
   <head>
