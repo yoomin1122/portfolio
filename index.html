@@ -1,8 +1,19 @@
+<!-- <?php
+$conn = mysqli_connect(
+  'localhost:3306',
+  'root',
+  'yoominserver1122',
+  'web'); 
+echo '<script>';
+if($conn->connect_error) echo 'console.log ("DB에 접속할수 없습니다.");';
+else echo 'console.log ("DB에 접속하였습니다.");';
+echo '</script>';
+?> -->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
@@ -60,6 +71,7 @@
     </div>
   </section>
 
+
   <section class="py-3 text-center container" id="three">
     <div class="row py-lg-3">
       <div class="mx-auto">
@@ -100,7 +112,7 @@
       
 
       <footer>
-        Copyright (C) 2022 YooMin all rights reserved.
+        <p>Copyright (C) 2022 YooMin all rights reserved.</p>
         <div class="right" style="margin  : 1px">
           <a href="mailto:me@yoomin.xyz" class="right"><img width=35 height=35 src="./img/mail.png"></img></a>
           <a href="https://github.com/yoomin1122"><img width=35 height=35 src="./img/github.png"></img></a>
