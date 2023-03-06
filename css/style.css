@@ -7,13 +7,10 @@
 }
 
 body {
-
     background: black;
     font-family: 'KOTRA_BOLD-Bold';
     color : white;
     height: 100%
-
-    
 }
 
 
@@ -23,6 +20,7 @@ body {
 .subtitle{
     font-size : 40px;
     color : white;
+
 }
 .title {
     font-size : 90px;
@@ -30,10 +28,15 @@ body {
 }
 .comments {
     text-align: left;
+    margin: 30px;
 }
 
+.card {
+    background: #6151f8;
+}
 
 footer {
+    font-size: 14px;
     text-align: left;
     position: relative;
     transform: translatY(-100%);
@@ -42,23 +45,62 @@ footer {
 .right {
     text-align: right;
 }
-
-.button-purple {
-    background-color: #B501FF;
-    padding: 100px 300px;
+p, ul, il {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size : 17px;
+}
+.button-link{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-decoration-line: none;
     color : white;
-    box-shadow: 1 5px 18px -2px #B501FF;
-    border-radius: 12px;
-    text-align: center;
-    border-color: #B501FF;
 }
 
-.button-purple:hover {
-	background-color: #fff;
-	border-color: #B501FF;
-	color: #B501FF;
+.button-link:hover {
+    text-decoration-line: underline;
+    color : white;
 }
-@media ( max-width: 480px  ) {
+button {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+  
+  button:focus,
+  button:hover {
+    color: #fff;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+@media ( max-width: 481px  ) {
     .subtitle{
             font-size : 40px;
             color : white;
@@ -67,13 +109,11 @@ footer {
             font-size : 50px;
             color : white;
         }
-    p, ul, il {
-            font-size : 15px;
-        }
+
     img {
-        max-width: 350px;
+        max-width: 300px;
         height: auto;
     }
-   }
+    }
     
 
